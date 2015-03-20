@@ -10,18 +10,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="../csv.js"></script>
-
- <script type="text/html" id="tabla">
-      <table id="resultado" class="center">
-        <% _.each(items, function(name) { %>
-          <tr class="<%= name.rowc %>">
-            <% _.each(name.value, function(celda) { %>
-              <td><%= celda %></td>
-            <% }); %>
-          </tr>
-        <% }); %>
-      </table>
-    </script>
+  <script  src="../tablascript.html"  id="tableTemplate"></script>
 
 </head>
 <body>

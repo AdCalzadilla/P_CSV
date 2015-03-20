@@ -1,13 +1,9 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   '-g',
-1 verbose cli   'node-supervisor' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'foreman', '-g' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.36
-4 verbose cache add [ 'node-supervisor', null ]
-5 verbose cache add name=undefined spec="node-supervisor" args=["node-supervisor",null]
+4 verbose cache add [ 'foreman', null ]
+5 verbose cache add name=undefined spec="foreman" args=["foreman",null]
 6 verbose parsed url { protocol: null,
 6 verbose parsed url   slashes: null,
 6 verbose parsed url   auth: null,
@@ -17,72 +13,168 @@
 6 verbose parsed url   hash: null,
 6 verbose parsed url   search: null,
 6 verbose parsed url   query: null,
-6 verbose parsed url   pathname: 'node-supervisor',
-6 verbose parsed url   path: 'node-supervisor',
-6 verbose parsed url   href: 'node-supervisor' }
-7 silly lockFile 4383d1ff-node-supervisor node-supervisor
-8 verbose lock node-supervisor /Users/Adrian/.npm/4383d1ff-node-supervisor.lock
-9 silly lockFile 4383d1ff-node-supervisor node-supervisor
-10 silly lockFile 4383d1ff-node-supervisor node-supervisor
-11 verbose addNamed [ 'node-supervisor', '' ]
+6 verbose parsed url   pathname: 'foreman',
+6 verbose parsed url   path: 'foreman',
+6 verbose parsed url   href: 'foreman' }
+7 silly lockFile faf84889-foreman foreman
+8 verbose lock foreman /Users/Adrian/.npm/faf84889-foreman.lock
+9 silly lockFile faf84889-foreman foreman
+10 silly lockFile faf84889-foreman foreman
+11 verbose addNamed [ 'foreman', '' ]
 12 verbose addNamed [ null, '*' ]
-13 silly lockFile c16c024b-node-supervisor node-supervisor@
-14 verbose lock node-supervisor@ /Users/Adrian/.npm/c16c024b-node-supervisor.lock
-15 silly addNameRange { name: 'node-supervisor', range: '*', hasData: false }
-16 verbose request where is /node-supervisor
+13 silly lockFile 055239d3-foreman foreman@
+14 verbose lock foreman@ /Users/Adrian/.npm/055239d3-foreman.lock
+15 silly addNameRange { name: 'foreman', range: '*', hasData: false }
+16 verbose request where is /foreman
 17 verbose request registry https://registry.npmjs.org/
-18 verbose request id 2e2b98160f789816
-19 verbose url raw /node-supervisor
-20 verbose url resolving [ 'https://registry.npmjs.org/', './node-supervisor' ]
-21 verbose url resolved https://registry.npmjs.org/node-supervisor
-22 verbose request where is https://registry.npmjs.org/node-supervisor
-23 info trying registry request attempt 1 at 09:40:17
-24 http GET https://registry.npmjs.org/node-supervisor
-25 http 404 https://registry.npmjs.org/node-supervisor
-26 verbose headers { date: 'Mon, 16 Mar 2015 09:40:18 GMT',
-26 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-26 verbose headers   'content-type': 'application/json',
-26 verbose headers   'cache-control': 'max-age=0',
-26 verbose headers   'content-length': '52',
-26 verbose headers   'accept-ranges': 'bytes',
-26 verbose headers   via: '1.1 varnish',
-26 verbose headers   age: '0',
-26 verbose headers   'x-served-by': 'cache-lhr6325-LHR',
-26 verbose headers   'x-cache': 'MISS',
-26 verbose headers   'x-cache-hits': '0',
-26 verbose headers   'x-timer': 'S1426498818.162243,VS0,VE642',
-26 verbose headers   'keep-alive': 'timeout=10, max=50',
-26 verbose headers   connection: 'Keep-Alive' }
-27 silly registry.get cb [ 404,
-27 silly registry.get   { date: 'Mon, 16 Mar 2015 09:40:18 GMT',
-27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-27 silly registry.get     'content-type': 'application/json',
-27 silly registry.get     'cache-control': 'max-age=0',
-27 silly registry.get     'content-length': '52',
-27 silly registry.get     'accept-ranges': 'bytes',
+18 verbose request id 362278a04f46b945
+19 verbose url raw /foreman
+20 verbose url resolving [ 'https://registry.npmjs.org/', './foreman' ]
+21 verbose url resolved https://registry.npmjs.org/foreman
+22 verbose request where is https://registry.npmjs.org/foreman
+23 info trying registry request attempt 1 at 12:56:00
+24 verbose etag "41NGRMRSYK5KMM6RPSG5LAUKV"
+25 http GET https://registry.npmjs.org/foreman
+26 http 304 https://registry.npmjs.org/foreman
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Thu, 19 Mar 2015 12:56:01 GMT',
+27 silly registry.get     server: 'Apache',
 27 silly registry.get     via: '1.1 varnish',
-27 silly registry.get     age: '0',
-27 silly registry.get     'x-served-by': 'cache-lhr6325-LHR',
-27 silly registry.get     'x-cache': 'MISS',
-27 silly registry.get     'x-cache-hits': '0',
-27 silly registry.get     'x-timer': 'S1426498818.162243,VS0,VE642',
+27 silly registry.get     'last-modified': 'Thu, 19 Mar 2015 12:56:01 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"41NGRMRSYK5KMM6RPSG5LAUKV"',
+27 silly registry.get     age: '16',
+27 silly registry.get     'x-served-by': 'cache-ams4143-AMS',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1426769761.560948,VS0,VE0',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'content-length': '0',
 27 silly registry.get     'keep-alive': 'timeout=10, max=50',
 27 silly registry.get     connection: 'Keep-Alive' } ]
-28 silly lockFile c16c024b-node-supervisor node-supervisor@
-29 silly lockFile c16c024b-node-supervisor node-supervisor@
-30 error 404 404 Not Found: node-supervisor
-30 error 404
-30 error 404 'node-supervisor' is not in the npm registry.
-30 error 404 You should bug the author to publish it
-30 error 404
-30 error 404 Maybe try 'npm search supervisor'
-30 error 404
-30 error 404 Note that you can also install from a
-30 error 404 tarball, folder, or http url, or git url.
-31 error System Darwin 14.0.0
-32 error command "node" "/usr/local/bin/npm" "install" "-g" "node-supervisor"
-33 error cwd /Users/Adrian/Documents/workspace/PL/P_CSV
-34 error node -v v0.10.36
-35 error npm -v 1.4.28
-36 error code E404
-37 verbose exit [ 1, true ]
+28 verbose etag https://registry.npmjs.org/foreman from cache
+29 silly addNameRange number 2 { name: 'foreman', range: '*', hasData: true }
+30 silly addNameRange versions [ 'foreman',
+30 silly addNameRange   [ '0.0.0',
+30 silly addNameRange     '0.0.1',
+30 silly addNameRange     '0.0.2',
+30 silly addNameRange     '0.0.3',
+30 silly addNameRange     '0.0.4',
+30 silly addNameRange     '0.0.5',
+30 silly addNameRange     '0.0.6',
+30 silly addNameRange     '0.0.8',
+30 silly addNameRange     '0.0.9',
+30 silly addNameRange     '0.0.10',
+30 silly addNameRange     '0.0.11',
+30 silly addNameRange     '0.0.12',
+30 silly addNameRange     '0.0.13',
+30 silly addNameRange     '0.0.14',
+30 silly addNameRange     '0.0.15',
+30 silly addNameRange     '0.0.16',
+30 silly addNameRange     '0.0.17',
+30 silly addNameRange     '0.0.18',
+30 silly addNameRange     '0.0.19',
+30 silly addNameRange     '0.0.20',
+30 silly addNameRange     '0.0.21',
+30 silly addNameRange     '0.0.22',
+30 silly addNameRange     '0.0.23',
+30 silly addNameRange     '0.0.24',
+30 silly addNameRange     '0.0.25',
+30 silly addNameRange     '0.0.26',
+30 silly addNameRange     '0.0.27',
+30 silly addNameRange     '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.2.1',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.4.1',
+30 silly addNameRange     '0.4.2',
+30 silly addNameRange     '1.0.0',
+30 silly addNameRange     '1.1.0',
+30 silly addNameRange     '1.2.0',
+30 silly addNameRange     '1.2.1',
+30 silly addNameRange     '1.3.0' ] ]
+31 verbose addNamed [ 'foreman', '1.3.0' ]
+32 verbose addNamed [ '1.3.0', '1.3.0' ]
+33 silly lockFile 73d92c4b-foreman-1-3-0 foreman@1.3.0
+34 verbose lock foreman@1.3.0 /Users/Adrian/.npm/73d92c4b-foreman-1-3-0.lock
+35 silly lockFile 73d92c4b-foreman-1-3-0 foreman@1.3.0
+36 silly lockFile 73d92c4b-foreman-1-3-0 foreman@1.3.0
+37 silly lockFile 055239d3-foreman foreman@
+38 silly lockFile 055239d3-foreman foreman@
+39 silly resolved [ { name: 'foreman',
+39 silly resolved     version: '1.3.0',
+39 silly resolved     homepage: 'http://strongloop.github.io/node-foreman/',
+39 silly resolved     description: 'Node Implementation of Foreman',
+39 silly resolved     author: { name: 'StrongLoop, Inc.' },
+39 silly resolved     license: 'MIT',
+39 silly resolved     keywords: [ 'foreman', 'upstart', 'commandline', 'env', 'Procfile' ],
+39 silly resolved     bin: { nf: 'nf.js' },
+39 silly resolved     scripts: { test: 'tap test' },
+39 silly resolved     dependencies:
+39 silly resolved      { commander: '~2.1.0',
+39 silly resolved        'http-proxy': '~1.0.3',
+39 silly resolved        mu2: '~0.5.20',
+39 silly resolved        'shell-quote': '~1.4.2' },
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'https://github.com/strongloop/node-foreman.git' },
+39 silly resolved     bugs:
+39 silly resolved      { url: 'https://github.com/strongloop/node-foreman/issues',
+39 silly resolved        email: 'callback@strongloop.com' },
+39 silly resolved     engines: { node: '>=0.6.9' },
+39 silly resolved     preferGlobal: true,
+39 silly resolved     devDependencies: { tap: '~0.4.8', chai: '~1.9.1', rimraf: '~2.2.8' },
+39 silly resolved     gitHead: '40ca4787547138466071508d0a549857377a869f',
+39 silly resolved     _id: 'foreman@1.3.0',
+39 silly resolved     _shasum: 'fa2824c0ca7d77f8fc347be5adb84a4b0c13f5a2',
+39 silly resolved     _from: 'foreman@',
+39 silly resolved     _npmVersion: '1.4.28',
+39 silly resolved     _npmUser: { name: 'rmg', email: 'r.m.graham@gmail.com' },
+39 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+39 silly resolved     dist:
+39 silly resolved      { shasum: 'fa2824c0ca7d77f8fc347be5adb84a4b0c13f5a2',
+39 silly resolved        tarball: 'http://registry.npmjs.org/foreman/-/foreman-1.3.0.tgz' },
+39 silly resolved     directories: {},
+39 silly resolved     _resolved: 'https://registry.npmjs.org/foreman/-/foreman-1.3.0.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install foreman@1.3.0 into /usr/local/lib
+41 info installOne foreman@1.3.0
+42 verbose lib/node_modules/foreman unbuild
+43 verbose tar unpack /Users/Adrian/.npm/foreman/1.3.0/package.tgz
+44 silly lockFile 123a18ea-r-local-lib-node-modules-foreman tar:///usr/local/lib/node_modules/foreman
+45 verbose lock tar:///usr/local/lib/node_modules/foreman /Users/Adrian/.npm/123a18ea-r-local-lib-node-modules-foreman.lock
+46 silly lockFile 5cb7663a-an-npm-foreman-1-3-0-package-tgz tar:///Users/Adrian/.npm/foreman/1.3.0/package.tgz
+47 verbose lock tar:///Users/Adrian/.npm/foreman/1.3.0/package.tgz /Users/Adrian/.npm/5cb7663a-an-npm-foreman-1-3-0-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/foreman'
+49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/foreman']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/usr/local/lib/node_modules/foreman',
+49 error   fstream_type: 'Directory',
+49 error   fstream_path: '/usr/local/lib/node_modules/foreman',
+49 error   fstream_class: 'DirWriter',
+49 error   fstream_stack:
+49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      'Object.oncomplete (fs.js:108:15)' ] }
+50 error Please try running this command again as root/Administrator.
+51 error System Darwin 14.0.0
+52 error command "node" "/usr/local/bin/npm" "install" "foreman" "-g"
+53 error cwd /Users/Adrian/Documents/workspace/PL/pruebas/P_CSV
+54 error node -v v0.10.36
+55 error npm -v 1.4.28
+56 error path /usr/local/lib/node_modules/foreman
+57 error fstream_path /usr/local/lib/node_modules/foreman
+58 error fstream_type Directory
+59 error fstream_class DirWriter
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/foreman'
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack Object.oncomplete (fs.js:108:15)
+64 verbose exit [ 3, true ]

@@ -1,0 +1,11 @@
+<p>
+     <table id="resultado" class="center">
+       <% _.each(items, function(name) { %>
+         <tr class="<%= name.rowc %>">
+           <% _.each(name.value, function(celda) { %>
+             <td><%= celda %></td>
+           <% }); %>
+         </tr>
+       <% }); %>
+     </table>
+</p>
